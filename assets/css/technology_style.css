@@ -129,9 +129,9 @@ body {
     }
     #technology_select_container li {
         font-size: 29px;
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
     }
     #technology_image_container {
         display: none;
