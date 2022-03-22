@@ -120,18 +120,16 @@ body {
     }
     #technology_select_container {
         margin: 0;
-    }
-    #technology_select_container li {
-        display: inline-block;
-    }
-    #technology_select_container li:not(:last-child) {
-        margin-right: 5vw;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
     }
     #technology_select_container li {
         font-size: 29px;
-        width: 65px;
-        height: 65px;
-        line-height: 65px;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        display: inline-block;
     }
     #technology_image_container {
         display: none;
