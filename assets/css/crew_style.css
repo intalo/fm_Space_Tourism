@@ -1,0 +1,132 @@
+/*body style*/
+body {
+    background: url(../img/crew_imgs/background-crew-desktop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*main style*/
+#main_title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-weight: bolder;
+    color: #f0f2f2;
+    margin: 0 0 50px 9vw;
+    width: 32vw;
+}
+#main_title strong {
+    color: #c4c8d867;
+}
+#main_flex_container {
+    display: flex;
+    margin: 13px 0 75px 0;
+}
+#person_information_container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#person_profession_title {
+    font-family: "Bellefair", serif;
+    color: #fff;
+    font-size: 2vw;
+    color: #c4c8d867;
+    width: 32vw;
+}
+#person_name_title {
+    font-family: "Bellefair", serif;
+    color: #fff;
+    font-size: 4vw;
+    width: 32vw;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#person_image_container {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+#person_biography {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.6vw;
+    color: #d0d6f9;
+    line-height: 1.778;
+    width: 32vw;
+}
+#person_select_container {
+    width: 32vw;
+    cursor: default;
+}
+.person_item {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #c4c8d867;
+    border-radius: 50%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.person_item:hover {
+    background: #c4c8d8cc;
+}
+.person_item:not(:last-child) {
+    margin-right: 13px;
+}
+.person_image {
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    max-width: 70vh;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+}
+
+/*responsive*/
+@media (max-width: 900px) {
+    #main_title {
+        margin: 0;
+        text-align: center;
+        margin-top: 50px;
+        width: unset;
+    }
+    #main_flex_container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0 0 100px 0;
+    }
+    #person_profession_title {
+        width: unset;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    #person_name_title {
+        width: 80vw;
+        font-size: 11vw;
+        margin-bottom: 25px;
+    }
+    #person_biography {
+        width: 80vw;
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+    #person_image_container {
+        display: none;
+    }
+    #person_image_container_mobile {
+        display: unset;
+        justify-content: center;
+        margin-top: 50px;
+        border-bottom: 1px solid #808080;
+    }
+    .person_image {
+        position: relative;
+        max-width: 95vw;
+        max-height: 95vw;
+    }
+}

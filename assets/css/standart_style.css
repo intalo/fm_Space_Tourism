@@ -1,0 +1,126 @@
+/*import google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+
+/*body style*/
+body {
+    overflow-x: hidden;
+}
+
+/*reset browser values*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 100%;
+}
+
+/*header style*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+    margin-top: 40px;
+    align-items: center;
+}
+#header_line {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background: #474952;
+}
+#logo_container {
+    margin: 0 50px 0 25px;
+}
+
+/*header navbar style*/
+.header_navbar_container {
+    line-height: 91px;
+    padding: 0 150px 0 125px;
+    width: max-content;
+    margin-left: 25px;
+    background: rgba(255, 255, 255, 0.048);
+    backdrop-filter: blur(50px);
+    cursor: default;
+}
+.header_navbar_item {
+    display: inline-block;
+}
+.header_navbar_item:not(:last-child) {
+    margin-right: 50px;
+}
+strong {
+    font-weight: bolder;
+}
+.header_navbar_item a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+.header_navbar_item a {
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+.header_navbar_item a:hover {
+    border-bottom: 3px solid #fff;
+}
+#icon_menu {
+    color: white;
+    font-size: 50px;
+    margin-right: 25px;
+}
+
+/*responsive*/
+@media (max-width: 1050px) {
+    #header_line {
+        display: none;
+    }
+    .header_navbar_container {
+        padding: 0 25px 0 25px;
+    }
+}
+@media (max-width: 775px) {
+    header {
+        background: #0b0d17;
+        margin-top: 0;
+    }
+    #menu_icon_container {
+        display: block;
+    }
+    .header_navbar_container {
+        display: none;
+    }
+    .header_mobile_navbar_container {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.048);
+        backdrop-filter: blur(50px);
+        cursor: default;
+        opacity: 0;
+        transition: 0.7s;
+    }
+    .header_navbar_item {
+        display: block;
+        width: 100%;
+        line-height: 100px;
+        text-align: center;
+    }
+    .header_navbar_item a {
+        height: 100px;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+    .header_navbar_item a:hover {
+        text-decoration: underline;
+        border-bottom: 1px solid #fff;
+    }
+    .show_menu {
+        transition-delay: 0.5s;
+        opacity: 1;
+        display: block;
+    }
+}

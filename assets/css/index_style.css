@@ -1,0 +1,94 @@
+/*body style*/
+body {
+    background: url(../img/index_imgs/background-home-desktop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*main style*/
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: margin-top 0.5s;
+}
+#main_text_container {
+    width: fit-content;
+}
+#main_text_container h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 4.75px;
+    font-size: 2vw;
+    color: #d0d6f9;
+    font-weight: bolder;
+}
+#main_text_container h2 {
+    font-family: "Bellefair", serif;
+    color: #fff;
+    font-size: 11vw;
+}
+#main_text_container p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.6vw;
+    color: #d0d6f9;
+    line-height: 1.778;
+    width: 32vw;
+}
+#explore_container a {
+    height: 18vw;
+    width: 18vw;
+    line-height: 18vw;
+    border-radius: 50%;
+    color: #0b0d17;
+    font-size: 2.4vw;
+    background: #fff;
+    font-family: "Bellefair", serif;
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow 0.2s;
+}
+#explore_container a:hover {
+    box-shadow: 0 0 0 3.6vw rgba(255, 255, 255, 0.322);
+}
+#explore_container {
+    width: fit-content;
+    text-align: center;
+}
+
+/*responsive*/
+@media (max-width: 1050px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    #main_text_container {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #explore_container a {
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    #main_text_container h1 {
+        font-size: 4vw;
+    }
+    #main_text_container h2 {
+        font-size: 20vw;
+    }
+    #main_text_container p {
+        width: 70vw;
+        font-size: 23px;
+    }
+}
+@media (max-width: 775px) {
+    header {
+        margin-bottom: unset;
+    }
+}

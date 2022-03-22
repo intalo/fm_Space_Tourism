@@ -1,0 +1,137 @@
+/*body style*/
+body {
+    background: url(../img/destination_imgs/background-destination-desktop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*main style*/
+main {
+    margin-bottom: 50px;
+}
+#main_title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-weight: bolder;
+    color: #f0f2f2;
+    margin: 50px 0 10px 10vw;
+}
+#main_title strong {
+    color: #c4c8d867;
+}
+
+/*main flex style*/
+#planet_image_container,
+#planet_information_container {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    align-items: center;
+    cursor: default;
+}
+#planet_image {
+    transform: scale(0.9, 0.9);
+}
+#main_flex_container {
+    display: flex;
+}
+.planet_item {
+    display: inline-block;
+    color: #d0d6f9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 21px;
+    letter-spacing: 2.7px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s;
+    cursor: pointer;
+}
+.planet_item:hover {
+    border-bottom: 2px solid #fff;
+}
+.planet_item:not(:first-child) {
+    margin-left: 25px;
+}
+#planet_name {
+    margin-top: 25px;
+    font-family: "Bellefair", serif;
+    color: #fff;
+    font-size: 7vw;
+}
+#planet_information {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.6vw;
+    color: #d0d6f9;
+    line-height: 1.778;
+    width: 32vw;
+}
+#main_flex_line {
+    width: 32vw;
+    margin-top: 25px;
+}
+#planet_statistics_container {
+    margin-top: 25px;
+}
+#planet_statistics_container th {
+    color: #d0d6f9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: bolder;
+    width: 17vw;
+    text-align: left;
+}
+#planet_statistics_container td {
+    font-family: "Bellefair", serif;
+    color: #fff;
+    font-size: 2vw;
+}
+
+/*responsive*/
+@media (max-width: 900px) {
+    #planet_image_container,
+    #planet_information_container {
+        text-align: center;
+        width: 100vw;
+    }
+    #planet_image {
+        transform: scale(0.7, 0.7);
+    }
+    #main_flex_container {
+        flex-wrap: wrap;
+    }
+    #main_title {
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+    #planet_name {
+        font-size: 17vw;
+    }
+    #planet_information {
+        font-size: 23px;
+        width: unset;
+        margin: 0 50px 0 50px;
+    }
+    #main_flex_line {
+        width: unset;
+        margin: 25px 50px 0 50px;
+    }
+    #planet_statistics_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #planet_statistics_container th {
+        font-size: 16px;
+        width: 250px;
+        text-align: center;
+    }
+    #planet_statistics_container td {
+        font-size: 31px;
+    }
+    .planet_item {
+        font-size: 21px;
+    }
+}
